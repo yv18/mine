@@ -54,3 +54,13 @@ body {
       transform: rotateY(360deg);
     }
   }
+
+@media only screen and (max-width: 600px) {
+    .earth {
+        width: 200px;
+        height: 200px;
+    }
+    .earth span {
+        font-size: 8px;
+    }
+}
