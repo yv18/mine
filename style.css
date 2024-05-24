@@ -7,10 +7,11 @@ body {
     height: 100vh;
     background-color: #333;
     perspective: 1000px;
-    background: url("stars.jpg");
+    background: url("./Image/stars.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
   }
 
   .earth {
@@ -55,13 +56,7 @@ body {
     }
   }
 
-@media only screen and (max-width: 600px) {
-    body {
-    background: url("stars.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    }
+  @media only screen and (max-width: 600px) {
     .earth {
         width: 200px;
         height: 200px;
@@ -70,3 +65,15 @@ body {
         font-size: 8px;
     }
 }
+
+
+.container {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
