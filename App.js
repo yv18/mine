@@ -18,7 +18,7 @@ function getPositionOnSphere(index, total) {
 
 for (let i = 0; i < numNames; i++) {
   const name = document.createElement('span');
-  name.textContent = `Bhumiiiii`;
+  name.textContent = `Bhumiiiii 💓`;
   const { x, y, z } = getPositionOnSphere(i, numNames);
   name.style.transform = `translate3d(${x}px, ${y}px, ${z}px)`;
   namesContainer.appendChild(name);
