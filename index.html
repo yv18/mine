@@ -1,20 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Universe</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-
-  <div class="container">
-    <div class="earth">
-      <div id="namesContainer"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Universe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="earth">
+        <div id="namesContainer"></div>
+      </div>
     </div>
-  </div>
 
-  <script src="App.js"></script>
-</body>
+
+    <div class="moon">
+      <!-- <img src="Assets/moon.jpg" alt="moon"> -->
+      <div class="img"></div>
+    </div>
+
+    <div class="blend-container">
+      <div class="blend-image"></div>
+  </div>
+   
+      <div class="station">
+        <img src="Assets/station.png" alt="station">
+      </div>
+
+   
+      <video id="video" autoplay loop muted playsinline>
+          <source src="/Assets/Mars.mp4" type="video/mp4">
+      </video>
+
+  
+
+      <canvas id="canvas"></canvas>
+
+
+     
+
+
+    <script src="App.js"></script>
+  </body>
 </html>

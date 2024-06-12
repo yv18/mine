@@ -7,10 +7,11 @@ body {
     height: 100vh;
     background-color: #333;
     perspective: 1000px;
-    background: url("stars.jpg");
+    background: url("stars.jpg") fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
   }
 
   .earth {
@@ -55,24 +56,91 @@ body {
     }
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
+
     .earth {
         width: 200px;
         height: 200px;
     }
+
     .earth span {
         font-size: 8px;
     }
+
+    canvas {
+      position: absolute;
+    }
+
+    .moon {
+      width: 100%;
+    }
+
+    .img {
+      width: 100%;
+    }
+    
+
+    .station img {
+      height: 150px;
+      width: auto;
+      position: absolute;
+      top: 0;
+    }
+    
+
 }
 
 
-.container {
-    margin-top: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    width: 100%;
+
+
+
+/* Mars */
+
+canvas {
+  position: absolute;
+  height: 100px;
+  top: 50%;
+  left: 50%;
 }
 
+
+video {
+  display: none;
+}
+
+
+
+.moon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: -70%;
+  margin: 0;
+} 
+
+
+.moon .img {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url('/Assets/moon.jpg'); /* Replace 'your-image.jpg' with your image URL */
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: overlay;
+  height: 100%;
+  width: 100%;
+}
+
+
+.station {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.station img {
+  height: 150px;
+  width: auto;
+  position: absolute;
+  right: 0;
+}
