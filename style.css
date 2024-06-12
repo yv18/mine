@@ -123,7 +123,7 @@ video {
 
 
 .moon .img {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url('/Assets/moon.jpg'); /* Replace 'your-image.jpg' with your image URL */
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url('/Assets/moo.jpg'); /* Replace 'your-image.jpg' with your image URL */
         background-size: cover;
         background-position: center;
         background-blend-mode: overlay;
